@@ -20,7 +20,7 @@ This research delves into the intricate balance between model complexity, size, 
 
 Within the complex realm of retail operations lies a delicate dance between strategy and logistics. The primary aim is, ensuring that customers effortlessly discover desired products thoughtfully placed within store shelves. This intricate process's efficiency isn't just about present shopping experiences; it shapes future product demand. On-Shelf Availability (OSA) shown in Figure 1 is the pivotal determinant of product accessibility, directly steering sales and profitability. However, this delicate balance often gets disrupted by the recurring plague of Out-of-Stock (OOS) situations, leaving customers frustrated and intensifying competition among retailers. [[2](#_ref152448539)]
 
-![](Aspose.Words.cf8a377a-0b31-4c70-92de-f9ce5932d777.003.png)
+![](img/Aspose.Words.cf8a377a-0b31-4c70-92de-f9ce5932d777.003.png)
 
 Figure 1: On-Shelf Availability
 
@@ -52,7 +52,7 @@ This research proposes an intricate yet streamlined approach, presenting an end-
 
 For real-time efficacy, we harness cutting-edge real-time object detection model architectures alongside runtime optimizations for diverse computing devices, ensuring superior performance. Our meticulously curated dataset adheres to rigorous guidelines, comprising 1000 annotated images. The optimized model, exhibiting the lowest latency, achieves an impressive mean average F1-score of 68.5% on our test set. It can process up to 67 images per second on Intel Xeon Gold and approximately 860 images per second on an A100 GPU. [[1](#_ref152448860)]
 
-![](Aspose.Words.cf8a377a-0b31-4c70-92de-f9ce5932d777.004.png)
+![](img/Aspose.Words.cf8a377a-0b31-4c70-92de-f9ce5932d777.004.png)
 
 Figure 2: Empty Space Detection
 
@@ -96,7 +96,7 @@ The augmentation process holds paramount importance in exposing the model to a d
 
 YOLO (You Only Look Once) is a groundbreaking deep learning model for real-time object detection in images and videos. Developed by Joseph Redmon and Santosh Divvala, YOLO processes entire images in a single neural network pass, eliminating the need for multiple detection steps. By dividing the image into a grid, each cell predicts bounding boxes and class probabilities, enabling swift object detection. Final output after the object detection will be as shown in Figure 3. YOLO's innovation lies in its speed-accuracy balance, making it ideal for applications such as autonomous vehicles and surveillance systems, where rapid and accurate object recognition is paramount.
 
-![](Aspose.Words.cf8a377a-0b31-4c70-92de-f9ce5932d777.005.png)
+![](img/Aspose.Words.cf8a377a-0b31-4c70-92de-f9ce5932d777.005.png)
 
 Figure 3: Object Detection
 
@@ -109,7 +109,7 @@ YOLOv5, boasts a significant leap in object detection. Its advancements in speed
 YOLOv8 is the latest iteration in the YOLO series of real-time object detectors, offering cutting-edge performance in terms of accuracy and speed. Building upon the advancements of previous YOLO versions, YOLOv8 introduces new features and optimizations that make it an ideal choice for various object detection tasks in a wide range of applications. Advanced Backbone and Neck Architectures, Anchor-free Split Ultralytics Head, Optimized Accuracy-Speed Trade-off and Variety of Pre-trained Models are key features of YOLOv8 model.
 In summary, YOLOv8 is the latest addition to the YOLO family, which builds upon the success of previous versions and introduces new features and improvements to boost performance and flexibility. YOLOv5, on the other hand, is known for its speed, simplicity, and accuracy. When it comes to choosing the best object detection model, there are several factors to consider. Some of these factors include speed, accuracy, ease of use, and developer experience. Figure 4 gives us an overview of mAP improvement from YOLOv5 to YOLOv8 with respect to different sizes.
 
-![U-Net and YOLO: AIML Models for Lane and Object Detection in Real-Time](Aspose.Words.cf8a377a-0b31-4c70-92de-f9ce5932d777.006.png)
+![U-Net and YOLO: AIML Models for Lane and Object Detection in Real-Time](img/Aspose.Words.cf8a377a-0b31-4c70-92de-f9ce5932d777.006.png)
 
 Figure 4: YOLOv5 vs YOLOv8
 
@@ -117,7 +117,7 @@ Figure 4: YOLOv5 vs YOLOv8
 
 To utilize the YOLO algorithm with customized classes, you can modify the `coco128.yml` configuration file. This file serves as a crucial setup for training the model on your specific object classes. Begin by duplicating the `coco128.yml` and renaming it to a meaningful title, like `custom\_classes.yml`. In this new configuration file, you must specify the number of classes you intend to recognize and customize the class names accordingly. Update the `nc` parameter to the number of your classes and create a `names` file listing each class label. For instance, if you are training the model to detect fruits, your `custom\_classes.yml` file would have `nc: 4` for four fruit classes and a `names` file listing the fruits, such as "apple," "banana," "orange," and "pear." These adjustments ensure YOLO can identify and distinguish the newly defined classes during training and inference, making it adaptable for various object detection tasks. In our case we have to alter the yml file such that only one class will be defined which is gap or void and we have to train and validate it.
 
-![](Aspose.Words.cf8a377a-0b31-4c70-92de-f9ce5932d777.007.png)
+![](img/Aspose.Words.cf8a377a-0b31-4c70-92de-f9ce5932d777.007.png)
 
 Figure 5: Work Flow
 
@@ -164,19 +164,19 @@ Table 1: Performance Comparison of YOLO models
 |              **Yolov8m**              |        25\.9        |   79\.1    |  0\.991   |    0\.849    | 0\.135  |  0\.367  |    0\.978     |   0\.974   |
 |              **Yolov8l**              |        43\.6        |   164\.8   |  0\.990   |    0\.852    | 0\.106  |  0\.325  |    0\.971     |   0\.985   |
 
-![](Aspose.Words.cf8a377a-0b31-4c70-92de-f9ce5932d777.008.jpeg)
+![](img/Aspose.Words.cf8a377a-0b31-4c70-92de-f9ce5932d777.008.jpeg)
 
 Figure 6: Yolov5n Confusion Matrix
 
-![](Aspose.Words.cf8a377a-0b31-4c70-92de-f9ce5932d777.009.png)
+![](img/Aspose.Words.cf8a377a-0b31-4c70-92de-f9ce5932d777.009.png)
 
 Figure 7: Yolov5n Performance Metrics
 
-![](Aspose.Words.cf8a377a-0b31-4c70-92de-f9ce5932d777.010.png)
+![](img/Aspose.Words.cf8a377a-0b31-4c70-92de-f9ce5932d777.010.png)
 
 Figure 8: Yolov8n Confusion Matrix
 
-![](Aspose.Words.cf8a377a-0b31-4c70-92de-f9ce5932d777.019.png)
+![](img/Aspose.Words.cf8a377a-0b31-4c70-92de-f9ce5932d777.019.png)
 
 Figure 9: Yolov8n Performance Metrics
 
